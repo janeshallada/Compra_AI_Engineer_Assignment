@@ -1,7 +1,7 @@
 import Groq from 'groq-sdk';
 
 export async function callLLM(systemPrompt, history, userMessage) {
-  const client = new Groq({ apiKey: process.env.GROQ_API_KEY = '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' });
+  const client = new Groq({ apiKey: process.env.GROQ_API_KEY = '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' });
 
   const response = await client.chat.completions.create({
     model: 'llama-3.3-70b-versatile',
